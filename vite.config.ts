@@ -12,9 +12,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        cifrado: resolve(__dirname, './cifrado.html'), // Agregamos el ./ por seguridad
-        adminpro: resolve(__dirname, './adminpro.html'),
-        cybersensei: resolve(__dirname, './cybersensei.html'),
+        cifrado: resolve(__dirname, '/cifrado/index.html'), // Agregamos el ./ por seguridad
+        adminpro: resolve(__dirname, '/adminpro/index.html'),
+        cybersensei: resolve(__dirname, '/cybersensei/index.html'),
       },
     },
   },

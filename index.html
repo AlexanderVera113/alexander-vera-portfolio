@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio_ | Alexander Vera Miranda</title>
+    <link rel="stylesheet" href="./src/style.css">
+  </head>
+  
+  <body class="bg-cyber-black text-[#e0e0e0] m-0 p-0 antialiased font-mono selection:bg-cyber-accent selection:text-black">
+    
+    <div id="app-container" class="transition-opacity duration-700">
+      
+      <div class="fixed inset-0 z-0 pointer-events-none">
+        <div class="absolute inset-0 bg-gradient-to-b from-zinc-900/20 to-cyber-black"></div>
+        <div class="absolute inset-0 opacity-10" 
+             style="background-image: linear-gradient(#333 1px, transparent 1px), linear-gradient(90deg, #333 1px, transparent 1px); background-size: 30px 30px;">
+        </div>
+      </div>
+
+      <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-6 bg-black/80 backdrop-blur-md border-b border-white/10">
+        <div class="text-xl font-bold tracking-tighter text-white">
+          PORT<span class="text-cyber-accent">FOLIO</span>_
+        </div>
+        <div class="hidden md:flex gap-8 text-sm font-bold text-gray-500">
+          <a href="#sobre-mi" class="hover:text-cyber-accent transition-colors duration-300">[ SOBRE MÍ ]</a>
+          <a href="#proyectos" class="hover:text-cyber-accent transition-colors duration-300">[ PROYECTOS ]</a>
+          <a href="#contacto" class="hover:text-cyber-accent transition-colors duration-300">[ CONTACTO ]</a>
+        </div>
+      </nav>
+
+      <section class="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-4">
+        <div class="mb-6 px-4 py-1 border border-cyber-accent/30 bg-cyber-accent/10 rounded-full">
+          <span class="text-xs font-bold text-cyber-accent tracking-[0.2em] uppercase">
+            ● Tec. Ciberseguridad •
+          </span>
+        </div>
+
+        <h1 class="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight">
+          ALEXANDER <span class="text-cyber-accent">VERA MIRANDA</span>
+        </h1>
+
+        <p class="text-lg text-gray-400 max-w-2xl mb-10">
+          Experto en Ciberseguridad & Desarrollo Seguro & Pentesting
+          <span class="block mt-2 text-sm text-gray-600">Protegiendo la infraestructura digital.</span>
+        </p>
+
+<a href="#contacto" class="px-8 py-4 bg-cyber-accent text-black font-bold text-sm tracking-widest uppercase hover:bg-white transition-all shadow-[0_0_15px_rgba(0,255,65,0.4)] cursor-pointer inline-block">
+            INICIAR AUDITORÍA
+        </a>
+      </section>
+
+      <section id="sobre-mi" class="relative z-10 py-20 px-6 max-w-4xl mx-auto">
+        <div class="border border-white/10 bg-black/40 p-8 md:p-12 relative overflow-hidden group">
+          <div class="absolute top-0 right-0 w-16 h-16 border-t-2 border-r-2 border-cyber-accent/20 transition-colors group-hover:border-cyber-accent/50"></div>
+          
+          <h2 class="text-3xl font-black text-white mb-6 tracking-tighter uppercase font-mono">
+            > SOBRE_<span class="text-cyber-accent">MÍ</span>
+          </h2>
+          
+          <div class="space-y-6 text-gray-400 leading-relaxed font-sans text-lg">
+            <p>
+              Soy Técnico en Ciberseguridad con experiencia en proyectos de seguridad aplicada, incluyendo desarrollo de herramientas de cifrado, revisión de seguridad en plataformas web y creación de aplicaciones educativas orientadas a la concientización en ciberseguridad. 
+            </p>
+            <p class="border-l-2 border-cyber-accent pl-6 py-2 bg-cyber-accent/5">
+              Actualmente busco realizar mi práctica profesional en el área de ciberseguridad, donde pueda seguir desarrollando mis habilidades en seguridad de aplicaciones, criptografía y análisis de vulnerabilidades.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="proyectos" class="py-20 px-6 max-w-6xl mx-auto relative z-10">
+        <div class="flex items-center gap-4 mb-12">
+          <h2 class="text-3xl md:text-5xl font-black text-white tracking-tighter">
+            [ MIS_<span class="text-cyber-accent">PROYECTOS</span> ]
+          </h2>
+          <div class="h-[1px] flex-1 bg-white/10"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <div class="group border border-white/10 bg-black/50 hover:border-cyber-accent/50 transition-all duration-300 relative overflow-hidden flex flex-col">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyber-accent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex justify-between items-start mb-4">
+                <h3 class="text-xl font-bold text-white uppercase">App de Cifrado</h3>
+                <span class="text-xs text-cyber-accent font-mono border border-cyber-accent/30 px-2 py-1 rounded">Desktop</span>
+              </div>
+              <p class="text-gray-400 text-sm mb-6 font-sans">
+                Aplicación de escritorio para cifrado y descifrado seguro de archivos sensibles utilizando criptografía simétrica (AES).
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="text-xs bg-white/5 text-gray-300 px-2 py-1">Python</span>
+                <span class="text-xs bg-white/5 text-gray-300 px-2 py-1">React/Electron</span>
+              </div>
+              <div class="flex gap-4 mt-auto">
+                <a href="/cifrado/" class="text-sm font-bold text-white hover:text-cyber-accent transition-colors">[ CLICK AQUÍ PARA VER PROYECTO ]</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="group border border-white/10 bg-black/50 hover:border-cyber-accent/50 transition-all duration-300 relative overflow-hidden flex flex-col">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyber-accent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex justify-between items-start mb-4">
+                <h3 class="text-xl font-bold text-white uppercase">AdminPro Chile</h3>
+                <span class="text-xs text-cyber-accent font-mono border border-cyber-accent/30 px-2 py-1 rounded">Pentesting</span>
+              </div>
+              <p class="text-gray-400 text-sm mb-6 font-sans">
+                Auditoría de seguridad y Pentesting para plataforma SaaS. Identificación y mitigación de vulnerabilidades web.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="text-xs bg-white/5 text-gray-300 px-2 py-1">Nmap</span>
+                <span class="text-xs bg-white/5 text-gray-300 px-2 py-1">Burp Suite</span>
+              </div>
+              <div class="flex gap-4 mt-auto">
+                <a href="/adminpro/" class="text-sm font-bold text-white hover:text-cyber-accent transition-colors">[ CLICK AQUÍ PARA VER PROYECTO ]</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="group border border-white/10 bg-black/50 hover:border-cyber-accent/50 transition-all duration-300 relative overflow-hidden flex flex-col">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyber-accent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex justify-between items-start mb-4">
+                <h3 class="text-xl font-bold text-white uppercase">CiberSensei</h3>
+                <span class="text-xs text-cyber-accent font-mono border border-cyber-accent/30 px-2 py-1 rounded">Plataforma</span>
+              </div>
+              <p class="text-gray-400 text-sm mb-6 font-sans">
+                Plataforma gamificada educativa para el aprendizaje interactivo de ciberseguridad con base de datos estructurada.
+              </p>
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span class="text-xs bg-white/5 text-gray-300 px-2 py-1">HTML/JS</span>
+                <span class="text-xs bg-white/5 text-gray-300 px-2 py-1">Supabase</span>
+              </div>
+              <div class="flex gap-4 mt-auto">
+                <a href="/cibersensei/" class="text-sm font-bold text-white hover:text-cyber-accent transition-colors">[ CLICK AQUÍ PARA VER PROYECTO ]</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="contacto" class="py-20 px-6 max-w-4xl mx-auto relative z-10">
+        <div class="flex items-center gap-4 mb-12">
+          <h2 class="text-3xl md:text-5xl font-black text-white tracking-tighter">
+            [ ESTABLECER_<span class="text-cyber-accent">CONEXIÓN</span> ]
+          </h2>
+          <div class="h-[1px] flex-1 bg-white/10"></div>
+        </div>
+
+        <div class="bg-black/40 border border-white/10 p-8 md:p-10 relative">
+          <div class="absolute top-0 right-0 bg-cyber-accent/10 border-l border-b border-white/10 px-4 py-1">
+            <span class="text-[10px] font-bold text-cyber-accent uppercase tracking-widest animate-pulse">● Canal Seguro Activo</span>
+          </div>
+
+          <form name="contacto-portfolio" method="POST" data-netlify="true" class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="space-y-2">
+                <label class="text-xs font-bold text-gray-500 uppercase tracking-wider">ID_USUARIO</label>
+                <input type="text" name="nombre" required placeholder="Ingresa tu nombre" 
+                       class="w-full bg-zinc-900/50 border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-cyber-accent transition-colors font-sans">
+              </div>
+              <div class="space-y-2">
+                <label class="text-xs font-bold text-gray-500 uppercase tracking-wider">CANAL_RETORNO (EMAIL)</label>
+                <input type="email" name="email" required placeholder="tu@email.com" 
+                       class="w-full bg-zinc-900/50 border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-cyber-accent transition-colors font-sans">
+              </div>
+            </div>
+
+            <div class="space-y-2">
+              <label class="text-xs font-bold text-gray-500 uppercase tracking-wider">TIPO_DE_AUDITORÍA (ASUNTO)</label>
+              <select name="asunto" class="w-full bg-zinc-900/50 border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-cyber-accent transition-colors font-sans">
+                <option value="seguridad">Reclutamiento Practica Profesional</option>
+                <option value="practica">Solicitud de Trabajo Freelance</option>
+                <option value="proyecto">Consulta de Proyecto</option>
+                <option value="seguridad">Análisis de Vulnerabilidades</option>
+                <option value="otro">Otros asuntos</option>
+              </select>
+            </div>
+
+            <div class="space-y-2">
+              <label class="text-xs font-bold text-gray-500 uppercase tracking-wider">TRANSMISIÓN_DATOS (MENSAJE)</label>
+              <textarea name="mensaje" rows="5" required placeholder="Escribe tu mensaje aquí..." 
+                        class="w-full bg-zinc-900/50 border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-cyber-accent transition-colors font-sans resize-none"></textarea>
+            </div>
+
+            <button type="submit" 
+                    class="w-full py-4 bg-cyber-accent text-black font-black tracking-[0.3em] uppercase hover:bg-white transition-all shadow-[0_0_20px_rgba(0,255,65,0.2)] hover:shadow-[0_0_30px_rgba(0,255,65,0.4)]">
+              ENVIAR_PAQUETE_DATOS
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <footer class="w-full py-12 text-center border-t border-white/10 bg-black relative z-10 font-mono">
+        <div class="mb-6 flex justify-center gap-6">
+          <a href="https://github.com/AlexanderVera113" class="text-gray-500 hover:text-cyber-accent transition-colors">[ GITHUB ]</a>
+          <a href="https://www.linkedin.com/in/alexander-veram/" class="text-gray-500 hover:text-cyber-accent transition-colors">[ LINKEDIN ]</a>
+        </div>
+        <p class="text-gray-600 text-[10px] tracking-[0.2em] uppercase">
+          Propiedad de Alexander Vera Miranda | NELA Innovación © 2026 
+        </p>
+      </footer>
+
+    </div> <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

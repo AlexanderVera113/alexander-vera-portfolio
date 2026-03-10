@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App de Cifrado | Portfolio_</title>
+    <link rel="stylesheet" href="../src/style.css">
+  </head>
+  
+  <body class="bg-cyber-black text-[#e0e0e0] m-0 p-0 antialiased selection:bg-cyber-accent selection:text-black">
+    
+    <div class="fixed inset-0 z-0 pointer-events-none">
+      <div class="absolute inset-0 bg-gradient-to-b from-zinc-900/20 to-cyber-black"></div>
+      <div class="absolute inset-0 opacity-10" style="background-image: linear-gradient(#333 1px, transparent 1px), linear-gradient(90deg, #333 1px, transparent 1px); background-size: 30px 30px;"></div>
+    </div>
+
+    <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-6 bg-black/80 backdrop-blur-md border-b border-white/10 font-mono">
+      <div class="text-xl font-bold tracking-tighter text-white">
+        PORT<span class="text-cyber-accent">FOLIO</span>_
+      </div>
+      <div class="flex">
+        <a href="../index.html" class="text-sm font-bold text-cyber-accent hover:text-white transition-colors duration-300">
+          [ &lt; VOLVER AL INICIO ]
+        </a>
+      </div>
+    </nav>
+
+    <main class="relative z-10 max-w-4xl mx-auto pt-32 pb-20 px-6">
+      
+      <header class="mb-16">
+        <h1 class="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight font-mono">
+          Aplicación de cifrado de archivos para transferencia segura de datos
+        </h1>
+        
+        <div class="flex flex-col gap-2 text-cyber-accent font-mono text-sm border-l-2 border-cyber-accent pl-4 mb-6">
+          <span>Periodo: 3 Noviembre - 14 Noviembre</span>
+          <span>Cliente: Clinica Iquique</span>
+          <span>Rol: Desarrollador de prototipo de seguridad</span>
+        </div>
+
+        <p class="text-lg text-gray-300 font-sans">
+          Aplicación de escritorio para cifrado y descifrado seguro de archivos sensibles utilizando criptografía simétrica.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Contexto del proyecto</h2>
+        <p class="text-gray-400 font-sans leading-relaxed">
+          Durante mi formación como Técnico en Ciberseguridad quise llevar conceptos teóricos a un entorno práctico. Para ello desarrollé una aplicación de escritorio enfocada en el manejo seguro de archivos sensibles, simulando escenarios de protección de datos médicos. <br><br>
+          El proyecto surgió como una iniciativa personal para comprender en profundidad cómo funcionan mecanismos de seguridad como autenticación, cifrado de archivos, almacenamiento seguro de credenciales y registro de eventos.<br><br>
+          Posteriormente compartí este proyecto en LinkedIn, lo que generó visibilidad dentro de la comunidad tecnológica y derivó en mi contacto con la empresa NelaTech para participar en proyectos relacionados con transferencia segura de archivos.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Objetivo del proyecto</h2>
+        <p class="text-gray-400 font-sans mb-4">El objetivo del proyecto fue diseñar una aplicación que permitiera:</p>
+        <ul class="list-disc list-inside text-gray-400 font-sans space-y-2 ml-4">
+          <li>Cifrar archivos sensibles mediante contraseñas definidas por el usuario</li>
+          <li>Proteger credenciales evitando almacenamiento en texto plano</li>
+          <li>Implementar autenticación básica de usuarios</li>
+          <li>Registrar eventos para mantener trazabilidad de operaciones</li>
+        </ul>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Tecnologías utilizadas</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-400 font-sans">
+          <div>
+            <h3 class="font-bold text-white font-mono mb-2">Frontend</h3>
+            <ul class="list-disc list-inside ml-4">
+              <li>Electron</li>
+              <li>React</li>
+              <li>Tailwind</li>
+            </ul>
+            <h3 class="font-bold text-white font-mono mb-2">Backend / lógica</h3>
+            <ul class="list-disc list-inside ml-4">
+              <li>Python</li>
+              <li>Cryptography (Fernet)</li>
+            </ul>
+            <h3 class="font-bold text-white font-mono mb-2">Base de datos</h3>
+            <ul class="list-disc list-inside ml-4">
+              <li>MySQL</li>
+            </ul>
+            <h3 class="font-bold text-white font-mono mb-2">Seguridad</h3>
+            <ul class="list-disc list-inside ml-4">
+              <li>Hashlib</li>
+              <li>AES (Fernet)</li>
+              <li>HMAC</li>
+              <li>Base64</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Arquitectura del sistema</h2>
+        <p class="text-gray-400 font-sans mb-4">La aplicación implementa el siguiente flujo de funcionamiento:</p>
+        <ol class="list-decimal list-inside text-gray-400 font-sans space-y-3 ml-4">
+          <li><strong class="text-white">Autenticación de usuario:</strong> La aplicación cuenta con un sistema de login conectado a una base de datos MySQL que permite validar credenciales de acceso.</li>
+          <li><strong class="text-white">Selección de archivo:</strong> El usuario selecciona el archivo que desea proteger.</li>
+          <li><strong class="text-white">Cifrado:</strong> El archivo es cifrado utilizando la librería Cryptography con Fernet, que implementa cifrado simétrico basado en AES y autenticación mediante HMAC.</li>
+          <li><strong class="text-white">Gestión segura de claves:</strong> Las contraseñas no se almacenan en texto plano. Se generan hashes utilizando hashlib antes de guardarse en la base de datos.</li>
+          <li><strong class="text-white">Descifrado:</strong> Para recuperar el archivo el usuario debe ingresar la misma contraseña utilizada durante el cifrado, la cual es validada contra el hash almacenado.</li>
+        </ol>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Registro de eventos (Logs de seguridad)</h2>
+        <p class="text-gray-400 font-sans mb-4">La aplicación incorpora un sistema básico de registro de eventos que permite mantener trazabilidad sobre las operaciones realizadas por los usuarios.<br>Entre los datos registrados se encuentran:</p>
+        <ul class="list-disc list-inside text-gray-400 font-sans space-y-2 ml-4 mb-4">
+          <li>nombre del archivo procesado</li>
+          <li>IP del usuario</li>
+          <li>fecha y hora de la operación</li>
+        </ul>
+        <p class="text-gray-400 font-sans">Este sistema permitió simular prácticas comunes en sistemas de seguridad donde los logs son utilizados para auditoría y monitoreo.</p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-6 border-b border-white/10 pb-2">Funcionalidades principales</h2>
+        
+        <div class="mb-10 grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 class="text-white font-mono mb-2">CIFRADO DE ARCHIVOS</h3>
+            <p class="text-gray-400 font-sans">Permite seleccionar un archivo y cifrarlo utilizando una contraseña definida por el usuario.</p>
+          </div>
+          
+          <div class="w-full h-48 bg-white border border-white/10 flex items-center justify-center">
+            <span class="text-gray-400 text-sm font-mono"> <img src="./assets/IMAGES/CIFRAR.jpeg" alt="Cifrado de Archivos" class="w-full h-full object-cover"></span>
+            </div>
+        </div>
+
+                <div class="mb-10 grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 class="text-white font-mono mb-2">DESCIFRADO DE ARCHIVOS</h3>
+            <p class="text-gray-400 font-sans">Permite seleccionar un archivo y descifrarlo utilizando una contraseña definida por el usuario.</p>
+          </div>
+          
+          <div class="w-full h-48 bg-white border border-white/10 flex items-center justify-center">
+            <span class="text-gray-400 text-sm font-mono"> <img src="./assets/IMAGES/DESCIFRAR.jpeg" alt="Descifrado de Archivos" class="w-full h-full object-cover"></span>
+            </div>
+        </div>
+
+              <div class="mb-10 grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 class="text-white font-mono mb-2">REGISTRO DE LOGS</h3>
+            <p class="text-gray-400 font-sans">Permite registrar y visualizar eventos de seguridad relacionados con las operaciones de cifrado y descifrado. Se muestran IPS, fechas y horas.</p>
+          </div>
+          
+          <div class="w-full h-48 bg-white border border-white/10 flex items-center justify-center">
+            <span class="text-gray-400 text-sm font-mono"> <img src="./assets/IMAGES/LOGS.jpeg" alt="Cifrado de Archivos" class="w-full h-full object-cover"></span>
+            </div>
+        </div>
+      </section>
+
+      
+
+<section class="mb-12">
+  <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Demo del sistema</h2>
+  <p class="text-gray-400 font-sans mb-6">Se presenta una demostración del funcionamiento del sistema mostrando el proceso de autenticación, cifrado y descifrado de archivos.</p>
+  
+  <div class="w-full aspect-video bg-black border border-white/10 overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.5)]">
+    <video 
+      controls 
+      class="w-full h-full object-contain"
+      poster="./assets/IMAGES/CIFRAR.jpeg"> 
+      <source src="./assets/VIDEO/CIFRADO_DEMO.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de videos.
+    </video>
+  </div>
+</section>
+
+      <section class="mb-20">
+        <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Aprendizajes del proyecto</h2>
+        <p class="text-gray-400 font-sans mb-4">Este proyecto me permitió comprender cómo implementar mecanismos de seguridad directamente en código y reforzó la importancia de considerar la seguridad desde las primeras etapas del desarrollo de software, entre ellos:</p>
+        <ul class="list-disc list-inside text-gray-400 font-sans space-y-2 ml-4">
+          <li>implementación de cifrado simétrico en aplicaciones</li>
+          <li>protección de credenciales mediante hashing</li>
+          <li>diseño de flujos de autenticación</li>
+          <li>gestión segura de archivos sensibles</li>
+          <li>implementación de registros de eventos para trazabilidad</li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer class="w-full py-8 text-center border-t border-white/10 bg-black relative z-10 font-mono">
+      <p class="text-gray-600 text-xs tracking-widest uppercase">
+        Propiedad de Alexander Vera Miranda | NELA Innovación © 2026
+      </p>
+    </footer>
+
+  </body>
+</html>

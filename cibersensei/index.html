@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CiberSensei | Portfolio_</title>
+    <link rel="stylesheet" href="../src/style.css">
+  </head>
+  
+  <body class="bg-cyber-black text-[#e0e0e0] m-0 p-0 antialiased selection:bg-cyber-accent selection:text-black">
+    
+    <div class="fixed inset-0 z-0 pointer-events-none">
+      <div class="absolute inset-0 bg-gradient-to-b from-zinc-900/20 to-cyber-black"></div>
+      <div class="absolute inset-0 opacity-10" style="background-image: linear-gradient(#333 1px, transparent 1px), linear-gradient(90deg, #333 1px, transparent 1px); background-size: 30px 30px;"></div>
+    </div>
+
+    <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-6 bg-black/80 backdrop-blur-md border-b border-white/10 font-mono">
+      <div class="text-xl font-bold tracking-tighter text-white">
+        PORT<span class="text-cyber-accent">FOLIO</span>_
+      </div>
+      <div class="flex">
+        <a href="/index.html" class="text-sm font-bold text-cyber-accent hover:text-white transition-colors duration-300">
+          [ &lt; VOLVER AL INICIO ]
+        </a>
+      </div>
+    </nav>
+
+    <main class="relative z-10 max-w-4xl mx-auto pt-32 pb-20 px-6">
+      
+      <header class="mb-16">
+        <h1 class="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight font-mono">
+          CyberSensei – Plataforma gamificada de aprendizaje en ciberseguridad
+        </h1>
+        <p class="text-lg text-gray-300 font-sans border-l-2 border-cyber-accent pl-4 mb-8">
+          Aplicación web educativa que enseña conceptos de ciberseguridad mediante niveles interactivos, desafíos y sistema competitivo.
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Contexto del proyecto</h2>
+        <p class="text-gray-400 font-sans leading-relaxed">
+          CyberSensei fue desarrollado como proyecto final del Taller de Proyecto de Especialidad durante mi formación como Técnico en Ciberseguridad.<br><br>
+          El objetivo del proyecto fue diseñar una plataforma educativa que enseñara conceptos de seguridad informática de forma interactiva, utilizando mecánicas de gamificación para mejorar la comprensión y participación de los usuarios.<br><br>
+          El proyecto fue desarrollado en colaboración con un compañero de equipo, integrando desarrollo web, diseño de experiencia de usuario y contenidos relacionados con ciberseguridad.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Problema que aborda</h2>
+        <p class="text-gray-400 font-sans">
+          Uno de los principales desafíos en ciberseguridad es la falta de concientización y formación práctica en temas como phishing, gestión de contraseñas o ingeniería social.<br><br>
+          CyberSensei busca abordar este problema mediante una experiencia interactiva que permite aprender conceptos de seguridad digital a través de niveles progresivos y desafíos gamificados.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Funcionalidades principales</h2>
+        <ul class="list-disc list-inside text-gray-400 font-sans space-y-3 ml-4">
+          <li><strong class="text-white">Sistema de autenticación:</strong> Los usuarios pueden registrarse e iniciar sesión para acceder a la plataforma y guardar su progreso.</li>
+          <li><strong class="text-white">Niveles progresivos de aprendizaje:</strong> El sistema presenta distintos niveles que permiten avanzar desde conceptos básicos hasta desafíos más complejos de ciberseguridad.</li>
+          <li><strong class="text-white">Desafíos y preguntas técnicas:</strong> Cada nivel incluye preguntas relacionadas con conceptos clave de seguridad informática como la triada CIA, buenas prácticas de seguridad y amenazas comunes.</li>
+          <li><strong class="text-white">Sistema de ranking (leaderboard):</strong> Los usuarios acumulan puntos de experiencia (XP) y pueden competir en un ranking global.</li>
+          <li><strong class="text-white">Gamificación:</strong> El aprendizaje se estructura mediante mecánicas similares a juegos educativos como Duolingo.</li>
+        </ul>
+      </section>
+
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <section>
+          <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Tecnologías utilizadas</h2>
+          <ul class="list-none text-gray-400 font-sans space-y-3">
+            <li><strong class="text-white font-mono block mb-1">Frontend</strong> React, Vite, TypeScript</li>
+            <li><strong class="text-white font-mono block mb-1">Backend / Base de datos</strong> Supabase, Auth, Database, Storage, Edge Functions</li>
+            <li><strong class="text-white font-mono block mb-1">Estilo</strong> CSS con estética Pixel Art retro</li>
+          </ul>
+          <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2 mt-8">Arquitectura del sistema</h2>
+          <p class="text-gray-400 font-sans mb-3">El sistema fue diseñado como una aplicación web moderna que integra una interfaz interactiva con un backend que gestiona autenticación, almacenamiento de datos y progreso del usuario.</p>
+          <p class="text-gray-400 font-sans mb-2">Supabase fue utilizado para gestionar:</p>
+          <ul class="list-disc list-inside text-gray-400 font-sans space-y-1 ml-4">
+            <li>autenticación de usuarios</li>
+            <li>base de datos de progreso y puntuaciones</li>
+            <li>almacenamiento de información del juego</li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Evidencia visual del proyecto</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div class="w-full aspect-video border border-white/10 overflow-hidden relative group">
+            <img src="../src/assets/IMAGES/CIBERSENSEILOGIN.jpeg" alt="Pantalla de login" class="w-full h-full object-cover">
+          </div>
+          <div class="w-full aspect-video border border-white/10 overflow-hidden relative group">
+            <img src="../src/assets/IMAGES/CIBERSENSEIHOME.jpeg" alt="Selección de misiones" class="w-full h-full object-cover">
+          </div>
+          <div class="w-full aspect-video border border-white/10 overflow-hidden relative group">
+            <img src="../src/assets/IMAGES/CIBERSENSEIQUEST.jpeg" alt="Preguntas del juego" class="w-full h-full object-cover">
+          </div>
+          <div class="w-full aspect-video border border-white/10 overflow-hidden relative group">
+            <img src="../src/assets/IMAGES/CIBERSENSEILBOARD.jpeg" alt="Leaderboard" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Demo del proyecto</h2>
+        <div class="flex items-center justify-start gap-4">
+          <a href="https://cibersensei.netlify.app" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-white text-black font-bold font-mono text-sm uppercase hover:bg-cyber-accent transition-colors flex items-center gap-2">
+            🔗 Link a CiberSensei
+          </a>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Aprendizajes del proyecto</h2>
+        <p class="text-gray-400 font-sans mb-4">Este proyecto permitió desarrollar habilidades en:</p>
+        <ul class="list-disc list-inside text-gray-400 font-sans space-y-2 ml-4">
+          <li>desarrollo full-stack de aplicaciones web</li>
+          <li>diseño de experiencias educativas mediante gamificación</li>
+          <li>integración de sistemas de autenticación y bases de datos</li>
+          <li>comunicación de conceptos de ciberseguridad de forma interactiva</li>
+        </ul>
+      </section>
+
+      <section class="mb-20">
+        <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Impacto del proyecto</h2>
+        <p class="text-gray-400 font-sans leading-relaxed mb-8">
+          CyberSensei fue presentado durante la exposición final del Taller de Proyecto de Especialidad, instancia en la que los estudiantes presentan sus desarrollos ante docentes y compañeros de la carrera.<br><br>
+          Durante esta jornada el proyecto fue destacado como uno de los desarrollos más sobresalientes del día, recibiendo comentarios positivos por parte del equipo docente, especialmente por su enfoque innovador de enseñanza de la ciberseguridad mediante gamificación.<br><br>
+          Este reconocimiento validó el enfoque del proyecto y demostró el potencial de utilizar experiencias interactivas para mejorar la concientización en seguridad digital.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="w-full h-64 border border-white/10 overflow-hidden">
+             <img src="../src/assets/IMAGES/FOTO_EXPO1.PNG" alt="Foto exposición 1" class="w-full h-full object-cover">
+          </div>
+          <div class="w-full h-64 border border-white/10 overflow-hidden">
+             <img src="../src/assets/IMAGES/FOTO_EXPO2.PNG" alt="Foto exposición 2" class="w-full h-full object-cover">
+          </div>
+          <div class="w-full h-64 md:col-span-2 border border-white/10 overflow-hidden">
+             <img src="../src/assets/IMAGES/FOTO_EXPO3.PNG" alt="Foto exposición 3" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="w-full py-8 text-center border-t border-white/10 bg-black relative z-10 font-mono">
+      <p class="text-gray-600 text-xs tracking-widest uppercase">
+        Propiedad de Alexander Vera Miranda | NELA Innovación © 2026
+      </p>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auditoría AdminPro | Portfolio_</title>
+    <link rel="stylesheet" href="../src/style.css">
+  </head>
+  
+  <body class="bg-cyber-black text-[#e0e0e0] m-0 p-0 antialiased selection:bg-cyber-accent selection:text-black">
+    
+    <div class="fixed inset-0 z-0 pointer-events-none">
+      <div class="absolute inset-0 bg-gradient-to-b from-zinc-900/20 to-cyber-black"></div>
+      <div class="absolute inset-0 opacity-10" style="background-image: linear-gradient(#333 1px, transparent 1px), linear-gradient(90deg, #333 1px, transparent 1px); background-size: 30px 30px;"></div>
+    </div>
+
+    <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-6 bg-black/80 backdrop-blur-md border-b border-white/10 font-mono">
+      <div class="text-xl font-bold tracking-tighter text-white">
+        PORT<span class="text-cyber-accent">FOLIO</span>_
+      </div>
+      <div class="flex">
+        <a href="../index.html" class="text-sm font-bold text-cyber-accent hover:text-white transition-colors duration-300">
+          [ &lt; VOLVER AL INICIO ]
+        </a>
+      </div>
+    </nav>
+
+    <main class="relative z-10 max-w-4xl mx-auto pt-32 pb-20 px-6">
+      
+      <header class="mb-16">
+        <h1 class="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight font-mono">
+          Auditoría de seguridad y Pentesting – AdminPro Chile Platform
+        </h1>
+        
+        <div class="flex flex-col gap-2 text-cyber-accent font-mono text-sm border-l-2 border-cyber-accent pl-4 mb-6">
+          <span>Periodo: 17 Noviembre - 15 Diciembre</span>
+          <span>Cliente: AdminPro SPA</span>
+          <span>Rol: Analista de Ciberseguridad</span>
+        </div>
+
+        <p class="text-lg text-gray-300 font-mono tracking-widest uppercase text-sm mb-8">
+          Nmap | Burp Suite | OWASP ZAP | SQLmap | Wireshark | XSStrike | SSLScan | John the Ripper
+        </p>
+      </header>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Contexto del proyecto</h2>
+        <p class="text-gray-400 font-sans leading-relaxed">
+          AdminPro Chile es una plataforma SaaS orientada a apoyar a emprendedores y pequeñas empresas en la gestión de sus procesos administrativos y financieros.<br><br>
+          Debido a que la plataforma maneja información financiera sensible de los usuarios, fue necesario realizar una auditoría de seguridad antes de su despliegue productivo, con el objetivo de identificar posibles vulnerabilidades en la aplicación web y validar el cumplimiento de buenas prácticas de seguridad.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Problema de seguridad</h2>
+        <p class="text-gray-400 font-sans mb-4">Las aplicaciones SaaS que gestionan datos financieros deben cumplir estándares de seguridad para prevenir ataques comunes como:</p>
+        <ul class="list-disc list-inside text-gray-400 font-sans space-y-2 ml-4 mb-4">
+          <li>inyección SQL</li>
+          <li>ataques XSS</li>
+          <li>ataques de fuerza bruta</li>
+          <li>explotación de configuraciones inseguras</li>
+          <li>ataques de phishing mediante clonación de páginas</li>
+        </ul>
+        <p class="text-gray-400 font-sans">El desafío del proyecto fue evaluar la seguridad de la plataforma y garantizar que el sistema estuviera protegido frente a estas amenazas.</p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Metodología utilizada</h2>
+        <p class="text-gray-400 font-sans mb-4">Para evaluar la seguridad de la plataforma se aplicó una metodología estructurada basada en pruebas de penetración y análisis de configuración de seguridad.</p>
+        <p class="text-gray-400 font-sans mb-2">Etapas de la auditoría:</p>
+        <ul class="list-disc list-inside text-gray-400 font-sans space-y-2 ml-4 mb-4">
+          <li>Reconocimiento y escaneo inicial</li>
+          <li>Evaluación de vulnerabilidades web</li>
+          <li>Pruebas de autenticación y cifrado</li>
+          <li>Análisis de cabeceras de seguridad</li>
+          <li>Simulación de ataques</li>
+          <li>Hardening y mitigación</li>
+          <li>Documentación y certificación</li>
+        </ul>
+        <p class="text-gray-400 font-sans">Esta metodología permitió identificar posibles debilidades en la configuración de seguridad y aplicar medidas correctivas.</p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Herramientas utilizadas</h2>
+        <ul class="list-disc list-inside text-gray-400 font-sans space-y-2 ml-4">
+          <li>Nmap – reconocimiento de puertos y servicios</li>
+          <li>SQLmap – pruebas de inyección SQL</li>
+          <li>Burp Suite – análisis de tráfico web</li>
+          <li>OWASP ZAP – escaneo activo de vulnerabilidades</li>
+          <li>XSStrike – detección de XSS</li>
+          <li>SSLScan – análisis de configuración TLS</li>
+          <li>John the Ripper – auditoría de contraseñas</li>
+          <li>Wireshark / TShark – análisis de tráfico</li>
+        </ul>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Hallazgos de seguridad</h2>
+        <p class="text-gray-400 font-sans mb-4">Los resultados de la auditoría mostraron que la plataforma presentaba una buena resistencia frente a vulnerabilidades críticas.</p>
+        <p class="text-gray-400 font-sans mb-2">Resultados principales:</p>
+        <ul class="list-none text-gray-400 font-sans space-y-2 ml-4 mb-6">
+          <li>✔ No se detectaron vulnerabilidades críticas de inyección SQL</li>
+          <li>✔ No se detectaron vulnerabilidades explotables de XSS</li>
+          <li>✔ El sistema de autenticación presentó políticas de seguridad robustas</li>
+          <li>✔ El cifrado TLS se encontraba correctamente configurado</li>
+        </ul>
+        <p class="text-gray-400 font-sans mb-2">Sin embargo, se identificaron 11 vulnerabilidades de configuración de criticidad media/baja, relacionadas con:</p>
+        <ul class="list-disc list-inside text-gray-400 font-sans space-y-2 ml-4 mb-8">
+          <li>Cabeceras HTTP de seguridad faltantes</li>
+          <li>Políticas CSP débiles</li>
+          <li>Riesgo de clickjacking mediante clonación de página</li>
+        </ul>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Evidencia Técnica</h2>
+        <p class="text-gray-400 font-sans mb-6">Las pruebas realizadas incluyeron análisis utilizando herramientas de seguridad ampliamente utilizadas en auditorías de aplicaciones web.</p>
+        
+        <div class="w-full border border-white/10 bg-black/50 p-4 relative">
+          
+          <div class="flex justify-between items-center mb-4 text-cyber-accent font-mono text-sm border-b border-white/10 pb-2">
+            <span>> EVIDENCIAS_TECNICAS.exe</span>
+            <span id="carousel-counter">[ 1 / 10 ]</span>
+          </div>
+
+          <div class="overflow-hidden relative w-full aspect-video bg-black border border-white/5">
+            
+            <div id="carousel-track" class="flex transition-transform duration-500 ease-in-out h-full w-full">
+              
+              <div class="w-full h-full flex-shrink-0 flex items-center justify-center p-4">
+                <span class="text-gray-500 font-mono text-center">[ IMAGEN 1: Escaneo Nmap ]<br><img src="../src/assets/IMAGES/Imagen1.jpg" alt="Escaneo Nmap" class="max-w-full max-h-full"></span>
+              </div>
+              
+              <div class="w-full h-full flex-shrink-0 flex items-center justify-center p-4">
+                <span class="text-gray-500 font-mono text-center">[ IMAGEN 2: Pruebas SQLmap ]<img src="../src/assets/IMAGES/Imagen2.jpg" alt="Pruebas SQLmap" class="max-w-full max-h-full"></span>
+              </div>
+              
+              <div class="w-full h-full flex-shrink-0 flex items-center justify-center p-4">
+                <span class="text-gray-500 font-mono text-center">[ IMAGEN 3: NIKTO ]<img src="../src/assets/IMAGES/Imagen3.jpg" alt="NIKTO" class="max-w-full max-h-full"></span>
+              </div>
+
+              <div class="w-full h-full flex-shrink-0 flex items-center justify-center p-4">
+                <span class="text-gray-500 font-mono text-center">[ IMAGEN 4: Resultados SSLScan ]<img src="../src/assets/IMAGES/Imagen4.jpg" alt="Resultados SSLScan" class="max-w-full max-h-full"></span>
+              </div>
+
+              <div class="w-full h-full flex-shrink-0 flex items-center justify-center p-4">
+                <span class="text-gray-500 font-mono text-center">[ IMAGEN 5: Resultados SSLScan ]<img src="../src/assets/IMAGES/Imagen5.jpg" alt="Resultados SSLScan" class="max-w-full max-h-full"></span>
+              </div>
+
+              <div class="w-full h-full flex-shrink-0 flex items-center justify-center p-4">
+                <span class="text-gray-500 font-mono text-center">[ IMAGEN 6: John the Ripper ]<img src="../src/assets/IMAGES/Imagen6.png" alt="John the Ripper" class="max-w-full max-h-full"></span>
+              </div>
+
+              <div class="w-full h-full flex-shrink-0 flex items-center justify-center p-4">
+                <span class="text-gray-500 font-mono text-center">[ IMAGEN 7: WIRESHARK / TSHARK ]<img src="../src/assets/IMAGES/Imagen7.png" alt="WIRESHARK / TSHARK" class="max-w-full max-h-full"></span>
+              </div>
+
+              <div class="w-full h-full flex-shrink-0 flex items-center justify-center p-4">
+                <span class="text-gray-500 font-mono text-center">[ IMAGEN 8: Social Engineering Toolkit (SET) ]<img src="../src/assets/IMAGES/Imagen8.jpg" alt="Social Engineering Toolkit (SET)" class="max-w-full max-h-full"></span>
+              </div>
+
+              <div class="w-full h-full flex-shrink-0 flex items-center justify-center p-4">
+                <span class="text-gray-500 font-mono text-center">[ IMAGEN 9: Social Engineering Toolkit (SET) ]<img src="../src/assets/IMAGES/Imagen9.jpg" alt="Social Engineering Toolkit (SET)" class="max-w-full max-h-full"></span>
+              </div>
+
+              <div class="w-full h-full flex-shrink-0 flex items-center justify-center p-4">
+                <span class="text-gray-500 font-mono text-center">[ IMAGEN 10: XSSTRIKE ]<img src="../src/assets/IMAGES/Imagen10.jpg" alt="XSSTRIKE" class="max-w-full max-h-full"></span>
+              </div>
+
+                            <div class="w-full h-full flex-shrink-0 flex items-center justify-center p-4">
+                <span class="text-gray-500 font-mono text-center">[ IMAGEN 11: ZAPROXY ]<img src="../src/assets/IMAGES/Imagen11.jpg" alt="ZAPROXY" class="max-w-full max-h-full"></span>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="flex justify-between mt-4">
+            <button id="btn-prev" class="px-4 py-2 text-cyber-accent border border-cyber-accent/30 hover:bg-cyber-accent hover:text-black transition-colors font-mono disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-cyber-accent disabled:cursor-not-allowed">
+              [ &lt; ANTERIOR ]
+            </button>
+            <button id="btn-next" class="px-4 py-2 text-cyber-accent border border-cyber-accent/30 hover:bg-cyber-accent hover:text-black transition-colors font-mono disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-cyber-accent disabled:cursor-not-allowed">
+              [ SIGUIENTE &gt; ]
+            </button>
+          </div>
+          
+        </div>
+        
+        <p class="text-gray-500 font-sans text-sm italic mt-4">En el portafolio público las evidencias se muestran con información sensible censurada para proteger la seguridad de la plataforma.</p>
+      </section>
+
+<section class="mb-12">
+        <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Documentación generada</h2>
+        <p class="text-gray-400 font-sans mb-4">Como resultado del proyecto se generó documentación técnica y legal para la operación segura de la plataforma:</p>
+        
+        <ul class="list-none font-mono space-y-3 ml-4 mb-6 text-sm">
+          <li>
+            <a href="../src/assets/PDFS/INFORME_NORMA_27001_ADMINPROCHILE.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 hover:underline transition-colors flex items-center gap-2">
+              &gt; INFORME NORMA 27001 ADMINPROCHILE.pdf (Protegido por contraseña)
+            </a>
+          </li>
+          <li>
+            <a href="../src/assets/PDFS/CHECKLIST_DE_CUMPLIMIENTO_Y_MITIGACIÓN_DE_RIESGOS.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 hover:underline transition-colors flex items-center gap-2">
+              &gt; CHECKLIST DE CUMPLIMIENTO Y MITIGACIÓN DE RIESGOS.pdf
+            </a>
+          </li>
+          <li>
+            <a href="../src/assets/PDFS/POLITICAS_DE_PRIVACIDAD_ADMINPROCHILE.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 hover:underline transition-colors flex items-center gap-2">
+              &gt; POLITICAS DE PRIVACIDAD ADMINPROCHILE.pdf
+            </a>
+          </li>
+          <li>
+            <a href="../src/assets/PDFS/TERMINOS_Y_CONDICIONES_ADMINPROCHILE.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 hover:underline transition-colors flex items-center gap-2">
+              &gt; TERMINOS Y CONDICIONES ADMINPROCHILE.pdf
+            </a>
+          </li>
+          <li>
+            <a href="./assets/PDFS/LICENCIAS_DE_USO_ADMINPROCHILE.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 hover:underline transition-colors flex items-center gap-2">
+              &gt; LICENCIAS DE USO ADMINPROCHILE.pdf
+            </a>
+          </li>
+        </ul>
+        
+        <p class="text-gray-400 font-sans">Esta documentación permitió establecer controles formales para la protección de datos y el uso seguro de la plataforma.</p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Resultado del proyecto</h2>
+        <p class="text-gray-400 font-sans mb-4">La auditoría permitió validar la seguridad de la plataforma antes de su despliegue productivo.</p>
+        <p class="text-gray-400 font-sans mb-2">Resultados obtenidos:</p>
+        <ul class="list-none text-gray-400 font-sans space-y-2 ml-4 mb-4">
+          <li>✔ Identificación y mitigación de vulnerabilidades de configuración</li>
+          <li>✔ Implementación de medidas de hardening del servidor</li>
+          <li>✔ Validación de cumplimiento de buenas prácticas de seguridad web</li>
+          <li>✔ Generación de documentación técnica y normativa para el sistema</li>
+        </ul>
+        <p class="text-gray-400 font-sans">El proyecto finalizó con la certificación de la implementación de los protocolos de seguridad y la entrega de los informes correspondientes.</p>
+      </section>
+
+      <section class="mb-20">
+        <h2 class="text-2xl font-bold text-cyber-accent font-mono mb-4 border-b border-white/10 pb-2">Lecciones aprendidas</h2>
+        <p class="text-gray-400 font-sans mb-4">Este proyecto permitió reforzar conocimientos en:</p>
+        <ul class="list-disc list-inside text-gray-400 font-sans space-y-2 ml-4">
+          <li>Auditoría de seguridad en aplicaciones SaaS</li>
+          <li>Pruebas de penetración en aplicaciones web</li>
+          <li>Hardening de servidores</li>
+          <li>Implementación de cabeceras de seguridad</li>
+          <li>Documentación de cumplimiento y seguridad</li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer class="w-full py-8 text-center border-t border-white/10 bg-black relative z-10 font-mono">
+      <p class="text-gray-600 text-xs tracking-widest uppercase">
+        Propiedad de Alexander Vera Miranda | NELA Innovación © 2026
+      </p>
+    </footer>
+<script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const track = document.getElementById('carousel-track');
+        const btnPrev = document.getElementById('btn-prev');
+        const btnNext = document.getElementById('btn-next');
+        const counter = document.getElementById('carousel-counter');
+        
+        // Contamos cuántas imágenes hay contando los hijos de la pista
+        const slides = track.children;
+        const totalSlides = slides.length;
+        let currentIndex = 0;
+
+        function updateCarousel() {
+          // Movemos la pista hacia la izquierda según el índice actual
+          track.style.transform = `translateX(-${currentIndex * 100}%)`;
+          
+          // Actualizamos el texto del contador
+          counter.textContent = `[ ${currentIndex + 1} / ${totalSlides} ]`;
+          
+          // Desactivamos los botones si estamos en los extremos
+          btnPrev.disabled = currentIndex === 0;
+          btnNext.disabled = currentIndex === totalSlides - 1;
+        }
+
+        btnNext.addEventListener('click', () => {
+          if (currentIndex < totalSlides - 1) {
+            currentIndex++;
+            updateCarousel();
+          }
+        });
+
+        btnPrev.addEventListener('click', () => {
+          if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+          }
+        });
+
+        // Inicializamos el estado de los botones y el contador
+        updateCarousel();
+      });
+    </script>
+  </body>
+</html>

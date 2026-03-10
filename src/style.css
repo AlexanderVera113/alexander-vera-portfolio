@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cyber-black: #050505;
+  --color-cyber-accent: #00ff41;
+}
+
+html {
+  scroll-behavior: smooth;
+}

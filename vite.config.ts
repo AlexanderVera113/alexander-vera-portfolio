@@ -1,13 +1,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite' // Importamos el plugin de Tailwind v4
+import tailwindcss from '@tailwindcss/vite'
 import { resolve } from 'path'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
-    tailwindcss(), // Agregamos el plugin aquí
+    tailwindcss(),
   ],
   build: {
     rollupOptions: {
@@ -18,5 +17,8 @@ export default defineConfig({
         cybersensei: resolve(__dirname, 'cybersensei.html'),
       },
     },
+    // Esto asegura que si algo falla, Netlify nos de más detalles
+    sourcemap: true,
+    emptyOutDir: true,
   },
 })

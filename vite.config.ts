@@ -12,13 +12,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        cifrado: resolve(__dirname, 'cifrado.html'),
-        adminpro: resolve(__dirname, 'adminpro.html'),
-        cybersensei: resolve(__dirname, 'cybersensei.html'),
+        cifrado: resolve(__dirname, './cifrado.html'), // Agregamos el ./ por seguridad
+        adminpro: resolve(__dirname, './adminpro.html'),
+        cybersensei: resolve(__dirname, './cybersensei.html'),
       },
     },
-    // Esto asegura que si algo falla, Netlify nos de más detalles
-    sourcemap: true,
-    emptyOutDir: true,
   },
 })

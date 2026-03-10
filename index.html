@@ -208,6 +208,38 @@
         </p>
       </footer>
 
-    </div> <script type="module" src="./src/main.js"></script>
+    </div>
+<script type="module" src="/src/main.js"></script>
+
+<script>
+  // Esperamos a que el DOM esté listo por si acaso
+  window.addEventListener('DOMContentLoaded', () => {
+    const formulario = document.getElementById('form-contacto');
+    
+    if (formulario) {
+      formulario.addEventListener('submit', function(e) {
+        e.preventDefault(); 
+
+        const myForm = e.target;
+        const formData = new FormData(myForm);
+        
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString(),
+        })
+        .then(() => {
+          document.getElementById('mensaje-exito').classList.remove('hidden');
+          const btn = document.getElementById('btn-enviar');
+          btn.innerText = "DATOS_ENVIADOS";
+          btn.disabled = true;
+          btn.style.opacity = "0.5";
+          myForm.reset();
+        })
+        .catch((error) => console.error("Error en envío:", error));
+      });
+    }
+  });
+</script>
   </body>
 </html>
